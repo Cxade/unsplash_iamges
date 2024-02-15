@@ -5,7 +5,7 @@ const newRandomBtn = document.querySelector(".new-random");
 const localStorageKey = "history";
 const history = loadHistory();
 
-const apiKey = process.env.API_KEY;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 async function getImage() {
   try {
